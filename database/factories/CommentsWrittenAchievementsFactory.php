@@ -24,6 +24,7 @@ class CommentsWrittenAchievementsFactory extends Factory
     public function definition(): array
     {
         return [
+            'number_of_comments' => $this->faker->randomDigit(),
             'title' => $this->faker->sentence()
         ];
     }

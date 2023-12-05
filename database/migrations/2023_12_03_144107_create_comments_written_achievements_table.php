@@ -14,6 +14,7 @@ return new class extends Migration
         Schema::create('comments_written_achievements', function (Blueprint $table) {
             $table->id();
             $table->string('title');
+            $table->integer('number_of_comments');
             $table->timestamps();
             $table->softDeletes();
         });
