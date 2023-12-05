@@ -25,6 +25,7 @@ class BadgeFactory extends Factory
     {
         return [
             'title' => $this->faker->sentence(),
+            'number_of_badges' => $this->faker->randomDigit(),
             'description' => $this->faker->sentence(),
         ];
     }
