@@ -14,6 +14,7 @@ return new class extends Migration
         Schema::create('lessons_watched_achievements', function (Blueprint $table) {
             $table->id();
             $table->string('title');
+            $table->integer('number_of_lessons');
             $table->timestamps();
             $table->softDeletes();
         });

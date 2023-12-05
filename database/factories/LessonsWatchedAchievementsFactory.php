@@ -24,6 +24,7 @@ class LessonsWatchedAchievementsFactory extends Factory
     public function definition(): array
     {
         return [
+            'number_of_lessons' => $this->faker->randomDigit(),
             'title' => $this->faker->sentence()
         ];
     }

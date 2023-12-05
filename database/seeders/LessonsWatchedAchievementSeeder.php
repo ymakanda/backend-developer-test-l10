@@ -15,16 +15,17 @@ class LessonsWatchedAchievementSeeder extends Seeder
     {
         //
         $items = [
-            '1' => ['title' => 'First Lesson Watched'],
-            '2' => ['title' => '5 Lessons Watched'],
-            '3' => ['title' => '10 Lessons Watched'],
-            '4' => ['title' => '25 Lessons Watched'],
-            '5' => ['title' => '50 Lessons Watched'],
+            '1' => ['number_of_lessons' => 1, 'title' => 'First Lesson Watched'],
+            '2' => ['number_of_lessons' => 5, 'title' => 'Lessons Watched'],
+            '3' => ['number_of_lessons' => 10, 'title' => 'Lessons Watched'],
+            '4' => ['number_of_lessons' => 25, 'title' => 'Lessons Watched'],
+            '5' => ['number_of_lessons' => 50, 'title' => 'Lessons Watched'],
             
         ];
 
         foreach ($items as $item) {
             LessonsWatchedAchievement::create([
+                'number_of_lessons' => $item['number_of_lessons'],
                 'title' => $item['title']
             ]);
         }
